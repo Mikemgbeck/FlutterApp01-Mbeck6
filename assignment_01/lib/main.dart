@@ -61,20 +61,38 @@ class MyApp extends StatelessWidget {
             ),
             Column(
               children: [
-                Container(
-                  height: 100.0,
-                  width: 100.0,
-                  color: Colors.yellow,
-                  child: Text(
-                    'Container 3',
+                Expanded(
+                  flex: 1,
+                  child: Padding(
+                    padding: const EdgeInsets.all(10.0),
+                    child: Container(
+                      height: 100.0,
+                      width: 100.0,
+                      color: Colors.yellow,
+                      child: Align(
+                        alignment: Alignment.bottomCenter,
+                        child: Text(
+                          'Container 3',
+                        ),
+                      ),
+                    ),
                   ),
                 ),
-                Container(
-                  height: 100.0,
-                  width: 100.0,
-                  color: Colors.blue,
-                  child: Text(
-                    'Container 4',
+                Expanded(
+                  flex: 1,
+                  child: Padding(
+                    padding: const EdgeInsets.all(10.0),
+                    child: Container(
+                      height: 100.0,
+                      width: 100.0,
+                      color: Colors.blue,
+                      child: Align(
+                        alignment: Alignment.centerRight,
+                        child: Text(
+                          'Container 4',
+                        ),
+                      ),
+                    ),
                   ),
                 ),
               ],
@@ -83,7 +101,7 @@ class MyApp extends StatelessWidget {
               children: [
                 Container(
                   height: 100.0,
-                  //height: double.infinity,
+
                   width: 100.0,
                   //width: double.infinity,
                   color: Colors.black,
