@@ -99,24 +99,31 @@ class MyApp extends StatelessWidget {
             ),
             Column(
               children: [
-                Container(
-                  height: 100.0,
-
-                  width: 100.0,
-                  //width: double.infinity,
-                  color: Colors.black,
-                  child: Text(
-                    'Container 4',
+                Expanded(
+                  flex: 2,
+                  child: Container(
+                    height: 100.0,
+                    width: 100.0,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: Colors.black,
+                      border: Border.all(color: Colors.white, width: 3),
+                    ),
+                    child: Center(
+                      child: Text(
+                        'Container 5',
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ),
                   ),
                 ),
-                Container(
-                  height: 100.0,
-                  //height: double.infinity,
-                  width: 100.0,
-                  //width: double.infinity,
-                  color: Colors.red,
-                  child: Text(
-                    'Container 5',
+                Expanded(
+                  flex: 1,
+                  child: Container(
+                    height: 100.0,
+                    width: 100.0,
+                    color: Colors.red,
+                    child: Text('Con 6', style: TextStyle(fontSize: 30)),
                   ),
                 ),
               ],
