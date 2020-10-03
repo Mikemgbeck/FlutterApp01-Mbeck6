@@ -12,7 +12,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       //first level widget of Material Design
       home: Scaffold(
-        //default route
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(
           title: Text("Row and Column Widgets"),
@@ -21,12 +20,6 @@ class MyApp extends StatelessWidget {
         body: Row(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          //mainAxisAlignment: MainAxisAlignment.start,
-          //mainAxisAlignment: MainAxisAlignment.center,
-          //mainAxisAlignment: MainAxisAlignment.end,
-          //crossAxisAlignment: CrossAxisAlignment.stretch,
-          //crossAxisAlignment: CrossAxisAlignment.start,
-          //crossAxisAlignment: CrossAxisAlignment.end,
           children: <Widget>[
             Column(
               children: [
