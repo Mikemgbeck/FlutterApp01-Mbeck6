@@ -19,9 +19,9 @@ class MyApp extends StatelessWidget {
         ),
         body: Row(
           mainAxisSize: MainAxisSize.max,
-          //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           //mainAxisAlignment: MainAxisAlignment.start,
-          mainAxisAlignment: MainAxisAlignment.center,
+          //mainAxisAlignment: MainAxisAlignment.center,
           //mainAxisAlignment: MainAxisAlignment.end,
           //crossAxisAlignment: CrossAxisAlignment.stretch,
           //crossAxisAlignment: CrossAxisAlignment.start,
@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
                 Container(
                   height: 100.0,
                   width: 100.0,
-                  color: Colors.yellow,
+                  color: Colors.orange,
                   child: Center(
                     child: Text(
                       'Container 1',
@@ -42,7 +42,7 @@ class MyApp extends StatelessWidget {
                 Container(
                   height: 100.0,
                   width: 100.0,
-                  color: Colors.yellow,
+                  color: Colors.white,
                   child: Center(
                     child: Text(
                       'Container 2',
@@ -56,7 +56,7 @@ class MyApp extends StatelessWidget {
                 Container(
                   height: 100.0,
                   width: 100.0,
-                  color: Colors.orange,
+                  color: Colors.yellow,
                   child: Text(
                     'Container 3',
                   ),
@@ -64,7 +64,7 @@ class MyApp extends StatelessWidget {
                 Container(
                   height: 100.0,
                   width: 100.0,
-                  color: Colors.orange,
+                  color: Colors.blue,
                   child: Text(
                     'Container 4',
                   ),
@@ -78,7 +78,7 @@ class MyApp extends StatelessWidget {
                   //height: double.infinity,
                   width: 100.0,
                   //width: double.infinity,
-                  color: Colors.red,
+                  color: Colors.black,
                   child: Text(
                     'Container 4',
                   ),
